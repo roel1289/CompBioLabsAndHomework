@@ -9,7 +9,7 @@ if(x > 5){
 }
 
   
-##step 2: Importing ExampleData.csv
+##step 2: Importing ExampleData.csv. wd must be in lab05
 ExampleDataFrame <- read.csv("ExampleData.csv") #automatically makes it a dataframe
 myVector <- ExampleDataFrame$x   #changing the dataframe into one vector
 
@@ -32,24 +32,60 @@ myVector
 sum(myVector <= 100 & myVector >= 50)
 
 #Step 2e: Making new datavector named "FiftyToOneHundred"  
-FiftyToOneHundred <- which(myVector > 50 & myVector < 100)
-str(FiftyToOneHundred)
+FiftyToOneHundred <- myVector[which(myVector > 50 & myVector < 100)]
+str(FiftyToOneHundred) 
+#index logic statements to get values NOT just positions
 
 #Step 2f: saving "FiftyToOneHundred" as a .csv
 write.csv(x = FiftyToOneHundred, file = "FiftyToOneHundred.csv")
 
-##Step 3: Here I will be importing CO2 data 
-CO2Data <- read.csv("CO2_data_cut_paste.csv")
+##Step 3: Here I will be importing CO2 data. Make sure wd is in lab04 
+CO2Data <- read.csv("CO2_data_cut_paste.csv") 
 str(CO2Data) #looking at the structure of the data
 View(CO2Data)
 
 #Step 3a: Determining the first year which data on "Gas" were non-zero
-which(CO2Data$Gas != 0)
-#based of the "which()" function, it appears the 135th year had the first non-zero value
-#Looking at the data, the 135th year is 1885
+NonZeroGasvalues <- which(CO2Data$Gas != 0)  #finding and storing where the gas values begin at 1
+CO2Data$Year[NonZeroGasvalues[1]]            # indexing in "Year" column which year is where "Gas" is 1
 
 #Step 3b: the years where "Total" emission was between 200 and 300 million tons of carbon
-which(CO2Data$Total > 200 & CO2Data$Total < 300)
+TotalEmissionPositions <- which(CO2Data$Total > 200 & CO2Data$Total < 300) #getting and storing positions where total emission is between 200 and 300 
+CO2Data$Year[TotalEmissionPositions] #indexing which years have total emission values between 200 and 300
 #The years span from the 129th year to the 137th year (1879 to 1887)
 
-###Part 4: Loops + Conditionals + Biology
+
+
+###Part 2: Loops + Conditionals + Biology???
+
+#FIRST I will set up the parameter values:
+totalGenerations <- 1000 #Inintial prey abundance at time t = 1 
+initPrey <- 100 	# initial prey abundance at time t = 1
+initPred <- 10		# initial predator abundance at time t = 1
+a <- 0.01 		# attack rate
+r <- 0.2 		# growth rate of prey
+m <- 0.05 		# mortality rate of predators
+k <- 0.1 		# conversion constant of prey into predators
+
+#SECOND I will create a time vector, and two additional vectors to store the results
+#PRE-ALLOCATING: One vector for values of "n" over time, and the other vector to store "p"
+timeSteps <- 1:totalGenerations              #time vector from 1 to totalGenerations
+n <- rep(initPrey, totalGenerations)       #setting NA's as place holders for totalGenerations length
+p <- rep(initPred, totalGenerations)
+
+#Equations: 
+#n[t] <- n[t-1] + (r * n[t-1]) - (a * n[t-1] * p[t-1])
+#p[t] <- p[t-1] + (k * a * n[t-1] * p[t-1]) - (m *p[t-1])
+
+#THIRD I will create a loop that implements these calculations
+for(t in 2:totalGenerations){
+  n[t] <- n[t-1] + (r * n[t-1]) - (a * n[t-1] * p[t-1])
+  p[t] <- p[t-1] + (k * a * n[t-1] * p[t-1]) - (m *p[t-1])
+  
+}
+
+#FOURTH I will add an "if" statement to turn any neg. values into a zero
+
+#FIFTH I will plot abundances of prey over time
+
+#SIXTH I will make a results matrix called "myResults" 
+
