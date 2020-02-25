@@ -84,8 +84,25 @@ for(t in 2:totalGenerations){
 }
 
 #FOURTH I will add an "if" statement to turn any neg. values into a zero
+for(t in 2:totalGenerations){
+  n[t] <- n[t-1] + (r * n[t-1]) - (a * n[t-1] * p[t-1])
+  p[t] <- p[t-1] + (k * a * n[t-1] * p[t-1]) - (m *p[t-1])
+  
+  if(n[t] < 0) {
+    n[t] = 0
+  }
+  if(p[t] < 0) {
+    p[t] = 0
+  }
+} 
 
 #FIFTH I will plot abundances of prey over time
+plot(timeSteps, n, main = "Predator and Prey Abundances Over Time")
+time(timeSteps, p)
 
 #SIXTH I will make a results matrix called "myResults" 
+myResults <- cbind(timeSteps, n, p)
+colnames(myResults) <- c("TimeStep", "PreyAbundance", "PredatorAbundance") #Here I am renaming the column names
 
+#Below I am putting this matrix into a csv
+write.csv(x = myResults, file = "PredPreyResults.csv")
