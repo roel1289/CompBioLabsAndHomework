@@ -108,27 +108,32 @@ colnames(myResults) <- c("TimeStep", "PreyAbundance", "PredatorAbundance") #Here
 write.csv(x = myResults, file = "PredPreyResults.csv")
 
 
+
+
 ###Part 3: A Parameter Study
 #Here I will create multiple sets of results from the pred-prey model above. 
 
 initPreyVec <- seq(from = 10, to = 100, by = 10) #the initial Prey vector
-LengInitPreyVec <- length(initPreyVec)
+LengInitPreyVec <- length(initPreyVec) #length of the initial Prey Vector
 
-BonusVecResults <- matrix(initPreyVec, LengInitPreyVec)
+#pre-allocating the data
+bonusRowNames <- 3
+bonusRowNum <- 333
+BonusMatrixResults <- matrix(nrow = bonusRowNum, ncol = bonusRowNames)
 
-for (i in 1:LengInitPreyVec) {
-  command1
-  
-  for (t in vector) {
-    command2
+bonusAnswer <- for (i in 1:LengInitPreyVec) {
+  for(t in 2:totalGenerations){
+    n[t] <- n[t-1] + (r * n[t-1]) - (a * n[t-1] * p[t-1])
+    p[t] <- p[t-1] + (k * a * n[t-1] * p[t-1]) - (m *p[t-1])
     
-    for (z in vector) {
-      command3
-      
+    if(n[t] < 0) {
+      n[t] = 0
     }
-    
-  }
-  
+    if(p[t] < 0) {
+      p[t] = 0
+    }
+  } 
+
 }
 
 
