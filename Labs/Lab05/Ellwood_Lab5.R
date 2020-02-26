@@ -55,7 +55,7 @@ CO2Data$Year[TotalEmissionPositions] #indexing which years have total emission v
 
 
 
-###Part 2: Loops + Conditionals + Biology???
+###Part 2: Loops + Conditionals + Biology
 
 #FIRST I will set up the parameter values:
 totalGenerations <- 1000 #Inintial prey abundance at time t = 1 
@@ -106,3 +106,33 @@ colnames(myResults) <- c("TimeStep", "PreyAbundance", "PredatorAbundance") #Here
 
 #Below I am putting this matrix into a csv
 write.csv(x = myResults, file = "PredPreyResults.csv")
+
+
+###Part 3: A Parameter Study
+#Here I will create multiple sets of results from the pred-prey model above. 
+
+initPreyVec <- seq(from = 10, to = 100, by = 10) #the initial Prey vector
+LengInitPreyVec <- length(initPreyVec)
+
+BonusVecResults <- matrix(initPreyVec, LengInitPreyVec)
+
+for (i in 1:LengInitPreyVec) {
+  command1
+  
+  for (t in vector) {
+    command2
+    
+    for (z in vector) {
+      command3
+      
+    }
+    
+  }
+  
+}
+
+
+#i)Setting up way to run the code 10 times
+#rep(initPreyVec, 10)
+#ii)Create data structures that store all the data
+#iii)Making sure data structures enable unambiguous cross-referencing
