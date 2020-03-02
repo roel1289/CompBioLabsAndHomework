@@ -66,7 +66,7 @@ myMeanFunc <- function(a) {  #a is the vector you want to average, and b is the 
   averageEq <- (sum(a))/(length(a)) #i am dividing the sum of a by the number of values in a
   return(averageEq)
 }
-#this function only works on VECTORS
+#the ARGUMENT of this function must be a VECTOR
 #testing function on c(5, 15, 10)
 my4bVec <- c(5,15,10)
 myMeanFunc(my4bVec)
@@ -77,3 +77,12 @@ dataVec4b <- DataForLab07[,1] #making a vector of the indecies of the first colu
 myMeanFunc(dataVec4b) #mean of data is 108.9457
 
 #step 4c: sum of squares calculation
+#Sum of sq. is essentially sum((x - mean(x))^2)
+mySumSquFunc <- function(s){
+  SumOfSqEq <- sum((s - myMeanFunc(s))^2) #note position of paranthesis
+  return(SumOfSqEq)
+}
+
+#testing function on DataForLab07
+mySumSquFunc(dataVec4b) #answer is 179442.4
+
