@@ -61,5 +61,19 @@ mySquareDifference(3,5)
 step4aVec1 <- c(2,4,6)
 mySquareDifference(step4aVec1,4)
 
-#step 4b: 
+#step 4b: making a function that calculates averages
+myMeanFunc <- function(a) {  #a is the vector you want to average, and b is the number of values
+  averageEq <- (sum(a))/(length(a)) #i am dividing the sum of a by the number of values in a
+  return(averageEq)
+}
+#this function only works on VECTORS
+#testing function on c(5, 15, 10)
+my4bVec <- c(5,15,10)
+myMeanFunc(my4bVec)
 
+#testing my function on "DataForLab07.csv"
+DataForLab07 <- read.csv("DataForLab07.csv") #importing dataframe
+dataVec4b <- DataForLab07[,1] #making a vector of the indecies of the first column
+myMeanFunc(dataVec4b) #mean of data is 108.9457
+
+#step 4c: sum of squares calculation
