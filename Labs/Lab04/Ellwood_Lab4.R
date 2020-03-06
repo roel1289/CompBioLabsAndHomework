@@ -17,10 +17,6 @@ for(i in (1:8)){
   print(FinalMoney)
 }
 
-# SMF COMMENTS: Line 20 gives an error message because "final" is not a defined variable.
-# SMF COMMENTS: Instead, you needed it to be "finalmoney".  Additionally, i should NOT be 
-# SMF COMMENTS: added to the tally.  Instead, the result of line 21's calculation should be
-# SMF COMMENTS: used to update the tally.
 
 #Step 3: expected population size after 7 years
 annualdecr <- .05 #pop. will decr. 5% per year
@@ -66,14 +62,7 @@ for(i in (2:18)){
   print(repdata)
 }
 
-# SMF COMMENTS: The goal of 5d was to store the data in the vector you made prior
-# SMF COMMENTS: to the loop.  Instead of what you had, right after line 64 you could 
-# SMF COMMENTS: have started your loop.  Here's a hint that is NOT complete:
-# SMF COMMENTS:     for ( i in 2:18 ) {
-# SMF COMMENTS:       repdata[i] <- # WHAT GOES HERE?
-# SMF COMMENTS:     }
-# SMF COMMENTS:     print(repdata)
-# SMF COMMENTS: That could have replaced lines 65-74
+
 
 
 #step 6: Fibonnaci Sequence problem
@@ -85,14 +74,6 @@ for(i in (3:length(repdata))){
 }
 print(repdata)
 
-# SMF COMMENTS: Lines 90 and beyond don't work because the object Final6 is not defined.
-# SMF COMMENTS: perhaps in line 88 you meant to create Final6 rather than "repdata"?
-# SMF COMMENTS: Also, line 92 then overwrites the object; line 92 should be deleted.
-# SMF COMMENTS: Line 91 is unnecessary and should be deleted; your for loop takes care of
-# SMF COMMENTS: position 3 already.
-
-# SMF COMMENTS: The print statement should be after (outside) the for loop, since it prints
-# SMF COMMENTS: the entire vector.
 
 #step 7: Redoing step 4, but now storing all the data.
 #below I am storing step 4's for loop output as "forloop4"
@@ -100,9 +81,11 @@ InitPopulation <- 2500
 CarryCap <- 10000 #envio carrying capacity
 IntGrowthRate <- 0.8
 FinalPopulation <- InitPopulation  #final population size after each time through the loop
+time <- seq(1,12) #pre-allocating time
 
-forloopabundance <- for(i in seq(1,12)){
-  FinalPopulation <- (FinalPopulation + (IntGrowthRate * FinalPopulation * ((CarryCap - FinalPopulation) / CarryCap)))
+
+forloopabundance <- for(i in 2:12){
+  FinalPopulation[i] <- (FinalPopulation[i-1] + (IntGrowthRate * FinalPopulation[i-1] * ((CarryCap - FinalPopulation[i-1]) / CarryCap)))
   print(FinalPopulation)                                   
 }
 
