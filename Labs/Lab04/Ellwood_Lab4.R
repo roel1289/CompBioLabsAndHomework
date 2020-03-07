@@ -84,7 +84,7 @@ FinalPopulation <- InitPopulation  #final population size after each time throug
 time <- seq(1,12) #pre-allocating time
 
 
-forloopabundance <- for(i in 2:12){
+for(i in 2:12){
   FinalPopulation[i] <- (FinalPopulation[i-1] + (IntGrowthRate * FinalPopulation[i-1] * ((CarryCap - FinalPopulation[i-1]) / CarryCap)))
   print(FinalPopulation)                                   
 }
