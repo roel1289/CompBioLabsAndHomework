@@ -91,7 +91,7 @@ for(i in 2:12){
 
 TimeProblem7 <- 1:12
 
-plot(TimeProblem7, forloopabundance) #plotting the results
+plot(TimeProblem7, FinalPopulation, main = "Population size over time", xlab = "Population Size", ylab = "Generations") #plotting the results
 
 # SMF COMMENTS: There are several problems with lines 112-122.  First and foremost, perhaps,
 # SMF COMMENTS: keep in mind that the "for" command does not actually return anything.  
