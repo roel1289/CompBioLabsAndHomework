@@ -34,3 +34,7 @@ TimeProblem7 <- 1:12
 plot(TimeProblem7, FinalPopulation, main = "Population size over time", xlab = "Population Size", ylab = "Generations") #plotting the results
 ```
 The final part of the code creates a graph to more illustrate the model.
+
+Here is an image of what this plot looks like: 
+![Discrete-time logistic function](C:\Users\Ross\Documents\EBIO4420\CompBioLabsAndHomework\Labs\Lab08\Ellwood_Lab08)
+
