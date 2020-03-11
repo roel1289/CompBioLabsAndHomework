@@ -20,4 +20,7 @@ TimeProblem7 <- 1:12
 plot(TimeProblem7, FinalPopulation, main = "Population size over time", xlab = "Population Size", ylab = "Generations") #plotting the results
 
 #calling function
-myDiscreteTimeLogFunc(.7, 3, i, 100)
+theResults <- myDiscreteTimeLogFunc(.8,10000, 12, 2500) 
+
+#putting my function into a data set
+write.csv(x = theResults, file = "LogisticGrowthModel.csv")
