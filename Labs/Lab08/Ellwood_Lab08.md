@@ -3,8 +3,9 @@
 #### EBIO 4420
 
 ## Discrete-time Logistic Growth Model
-Here we have the discrete-time Logistic growth model. For this weeks lab ([EBIO 4420 Lab08](https://github.com/flaxmans/CompBio_on_git/blob/master/Labs/Lab08/Lab08_documentation_and_metadata.md))
-we will be turning this model into the form of a function. This function takes a population
+One of the best ways to measure the growth of a population is by the **discrete-time Logistic growth model**. For this weeks
+ lab ([EBIO 4420 Lab08](https://github.com/flaxmans/CompBio_on_git/blob/master/Labs/Lab08/Lab08_documentation_and_metadata.md))
+we will be turning the discrete-time logistic growth model into the form of a function. This function takes a population
 and illustrates how the population will grow over time. For this function to work,
 there are a few necessary values one must know:
 * the initial population size
@@ -34,7 +35,7 @@ TimeProblem7 <- 1:12
 
 plot(TimeProblem7, FinalPopulation, main = "Population size over time", xlab = "Population Size", ylab = "Generations") #plotting the results
 ```
-The final part of the code creates a graph to more illustrate the model.
+The section of the code creates a graph to more illustrate the model.
 
 Here is an image of what this plot looks like: 
 ![Discrete-time logistic function](EBIO4420Image.PNG)
