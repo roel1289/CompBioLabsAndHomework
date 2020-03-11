@@ -41,7 +41,8 @@ theResults <- myDiscreteTimeLogFunc(.8,10000, 12, 2500)
 #putting my function into a data set
 write.csv(x = theResults, file = "LogisticGrowthModel.csv")
 ```
-The section of the code creates a graph to more illustrate the model.
+The code creates a graph to more illustrate the model. And finally,
+the code puts the data into a data set.
 
 Here is an image of what this plot looks like: 
 ![Discrete-time logistic function](EBIO4420Image.PNG)
