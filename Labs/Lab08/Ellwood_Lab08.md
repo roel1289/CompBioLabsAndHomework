@@ -10,9 +10,10 @@ and illustrates how the population will grow over time. For this function to wor
 there are a few necessary values one must know:
 * the initial population size
 * the carrying capacity
+* the total number of generations
 * the intrinsic growth rate
 
-Here is an example of the function I have created. In this example,
+Here is an _example_ of the function I have created. In this example,
 the initial populations size is 2500, the carrying capacity is 10000, and the 
 intrinsic growth rate is 0.8.
 
@@ -41,8 +42,7 @@ theResults <- myDiscreteTimeLogFunc(.8,10000, 12, 2500)
 #putting my function into a data set
 write.csv(x = theResults, file = "LogisticGrowthModel.csv")
 ```
-The code creates a graph to more illustrate the model. And finally,
-the code puts the data into a data set.
+The final two commands of the code creates a plot and puts the data into a data set.
 
 Here is an image of what this plot looks like: 
 ![Discrete-time logistic function](EBIO4420Image.PNG)
