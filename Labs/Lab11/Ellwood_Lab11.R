@@ -27,3 +27,7 @@ View(newWoodData) #make sure row 12150 was deleted.
 #new dataframe that has each species listed only once , has Family and Binomial
 #infor for each species, and has mean woodDensity for each species
 
+#finding unique species names
+unique(newWoodData$Binomial)
+#using tidyverse:
+summarise(group_by(newWoodData$Binomial))
