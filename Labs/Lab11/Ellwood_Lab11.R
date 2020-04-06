@@ -23,6 +23,12 @@ library("dplyr")
 newWoodData <- woodData %>% slice(-c(12150)) #I used a line of code from dplyr
 View(newWoodData) #make sure row 12150 was deleted.
 
+#other potential methods to delete a row with NA
+noNAdata1 <- woodData[-which(is.na(woodData$woodDensity)),] #here is another method to remove (atleast) 1 row from dataframe in woodDensity column
+noNAdata2 <- drop_na(woodData) #Need tidyverse to do this command. deletes column w/ NA
+  
+
+
 #step 5: One kind of pseudocode-replication
 #new dataframe that has each species listed only once , has Family and Binomial
 #infor for each species, and has mean woodDensity for each species
@@ -30,4 +36,16 @@ View(newWoodData) #make sure row 12150 was deleted.
 #finding unique species names
 unique(newWoodData$Binomial)
 #using tidyverse:
-summarise(group_by(newWoodData$Binomial))
+#summarise(group_by(newWoodData$Binomial))
+
+names(newWoodData) #see column names
+
+#NOTE: must do library("dplyr") prior to this command
+meanBySpecies <- summarize(
+  group_by(newWoodData,             # take my noNAData
+           Binomial,Family),        # preserve these
+  MeanDensity = mean(woodDensity))  # summary is mean()
+
+#check to see if worked
+length(unique(newWoodData$Binomial)) == nrow(meanBySpecies) #they are same, so it worked
+head(meanBySpecies) #tibble is dataframe
