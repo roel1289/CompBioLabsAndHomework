@@ -1,4 +1,5 @@
 # Data for the *The trophic ecology of a desert ricer fish assemblage: influence of season and hydrologic variability*
+[Link for data](https://datadryad.org/stash/dataset/doi:10.5061/dryad.4q50bp6)
 
 ## Goals of the original study:
 With the rise of humans, more and more animal habitats are being altered; 
