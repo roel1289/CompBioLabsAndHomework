@@ -40,7 +40,8 @@ unique(newWoodData$Binomial)
 
 names(newWoodData) #see column names
 
-#NOTE: must do library("dplyr") prior to this command
+#collapsing data and showing avg density
+#NOTE: must do library("dplyr") prior to this command 
 meanBySpecies <- summarize(
   group_by(newWoodData,             # take my noNAData
            Binomial,Family),        # preserve these
@@ -49,3 +50,15 @@ meanBySpecies <- summarize(
 #check to see if worked
 length(unique(newWoodData$Binomial)) == nrow(meanBySpecies) #they are same, so it worked
 head(meanBySpecies) #tibble is dataframe
+
+
+#step 6: COntrasting most and least dense families
+#step 6a: Data frame with avg. densities
+avgFamDens <- meanBySpecies[,2:3]
+str(avgFamDens)
+#step 6b: 
+
+#step 6c:
+
+##Part 3:
+#step 7: plotting densities of most & least dense families with facets
