@@ -19,15 +19,16 @@ library(tidyr)
 noNAGearFishLength <- drop_na(gearFishLength)
 
 #check to see if worked
-which(is.na(noNAGearFishLength2)) #it worked!
+which(is.na(noNAGearFishLength)) #it worked!
 
 #filter into unique gear entries
 #find average length for each gear option
 meanLengthByGear <- summarize(
   group_by(noNAGearFishLength,
-      GEAR),
+      GEAR, SPECIES),
   meanLength = mean(TL_MM))
 
-View(meanLengthBySpecies)
+View(meanLengthByGear)
 #so far, I have found the avg. length of each fish species using each type of gear method
-plot(meanLengthByGear)
+
+barplot(gearVslength)
