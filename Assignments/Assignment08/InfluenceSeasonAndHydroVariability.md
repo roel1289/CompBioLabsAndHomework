@@ -5,7 +5,9 @@ Ross Ellwood
 With the rise of humans, more and more animal habitats are being altered; it is especially changing in river habitats. With this change, 
 all the river's inhabitants are being affected at all levels of life. With this change, it is crucial to understand how fish will react. When 
 focusing on fish, there are various ways to catch them, and each of these ways has their own benefits. Within research it is important to figure out methods to catch fish 
-that is the most effective in catching them and least harmful to the fish. 
+that is the most effective in catching them and least harmful to the fish. One way to compare the different fishing methods is to 
+compare the average size fish caught with each fishing method. A method that catches smaller fish on average may target juveniles while a 
+method that catches bigger fish on average may target adult or healthier fish. Information such as this may help to decide which techniques are used. 
 
 ## Data to be analyzed: *The trophic ecology of a desert ricer fish assemblage: influence of season and hydrologic variability*
 [Link for data](https://datadryad.org/stash/dataset/doi:10.5061/dryad.4q50bp6)
