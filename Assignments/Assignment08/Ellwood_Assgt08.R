@@ -16,10 +16,17 @@ str(gearFishLength)
 install.packages("tidyverse") #need tidyverse for following command
 library(dplyr)
 library(tidyr)
-noNAGearFishLength <- drop_na(gearFishLength)
+noNAGearFishLength <- drop_na(gearFishLength) #uses tidyr
 
 #check to see if worked
 which(is.na(noNAGearFishLength)) #it worked!
+
+barplot(height = noNAGearFishLength$TL_MM, names = noNAGearFishLength$GEAR)
+
+bPlot <- table(noNAGearFishLength$TL_MM, noNAGearFishLength$GEAR)
+barplot(bPlot)
+
+################
 
 #filter into unique gear entries
 #find average length for each gear option
@@ -28,11 +35,12 @@ meanLengthByGear <- summarize(
       GEAR),
   meanLength = mean(TL_MM))
 
-str(meanLengthByGear)
+newMeanLengthByGear <- meanLengthByGear[-c(1),]
+
+str(newMeanLengthByGear)
 #so far, I have found the avg. length of each fish species using each type of gear method
 
 
-
-barplotInput <- table(meanLengthByGear$GEAR, meanLengthByGear$meanLength)
-barplot(barplotInput)
+barplotinput <- table(newMeanLengthByGear$meanLength, newMeanLengthByGear$GEAR)
+barplot(barplotinput)
 View(barplotInput)
