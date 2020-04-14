@@ -3,8 +3,8 @@ Ross Ellwood
 
 ## Introduction
 With the rise of humans, more and more animal habitats are being altered; it is especially changing in river habitats. With this change, 
-all the river's inhabitants are being affected at all levels of life. With this change, it is crucial to understand how fish will react. When 
-focusing on fish, there are various ways to catch them, and each of these ways has their own benefits. Within research it is important to figure out methods to catch fish 
+all the river's inhabitants are being affected at all levels of life, and it is crucial to understand how fish will react. There are
+various ways to catch fish for research, and each of these ways has their own benefits. Within research it is important to figure out methods to catch fish 
 that is the most effective in catching them and least harmful to the fish. One way to compare the different fishing methods is to 
 compare the average size fish caught with each fishing method. A method that catches smaller fish on average may target juveniles while a 
 method that catches bigger fish on average may target adult or healthier fish. Information such as this may help to decide which techniques are used. 
@@ -14,7 +14,7 @@ method that catches bigger fish on average may target adult or healthier fish. I
 
 ### Goals of the original study:
 One study by Kathrine Behn and Colden Baxter takes a look into this phenomena. The main goal of this study is to determine how factors such as the influence of
-seasons and hydrological variability influence the foodweb of a river. 
+seasons and hydrological variability influence the foodweb of a river.
 	
 	
 ### Methods authors used to produce the data: 
@@ -44,7 +44,7 @@ have already been discussed.
 I have not found any source code. 
 	
 ## My Analysis
-Although the main goal of the original study is to look at how foodwebs react to the changes of seasons, my 
+Although the goal of the original study is to look at how foodwebs react to the changes of seasons, my 
 goal will be a little different. In the study, there are three methods for catching the fish to measure. These methods are a dipnet, hoop, and a seine. At a 
 quick glance, it may seem that that each of these methods should catch the same types of fish, but is it possible that there are 
 certain biases as to whether some methods may tend to catch different fish? This leads me to the main ***question*** of my analysis: 
