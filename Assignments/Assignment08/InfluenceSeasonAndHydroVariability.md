@@ -48,7 +48,7 @@ Although the goal of the original study is to look at how foodwebs react to the 
 goal will be a little different. In the study, there are three methods for catching the fish to measure. These methods are a dipnet, hoop, and a seine. At a 
 quick glance, it may seem that that each of these methods should catch the same types of fish, but is it possible that there are 
 certain biases as to whether some methods may tend to catch different fish? This leads me to the main ***question*** of my analysis: 
-how to the average length of fish compare between the three fising methods?
+how do the average length of fish compare between the three fising methods?
 
 ## References
 Behn, Kathrine E.; Baxter, Colden V. (2019), The trophic ecology of a desert river fish assemblage: 
