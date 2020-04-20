@@ -1,5 +1,7 @@
 # How different fishing methods reflect the size of fish
 By Ross Ellwood
+![The little Colorado River](https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/littleColoradoRiver.jpg)
+
 ## Biological Question
 When researching rivers and other aquatic habitats, studying the fish that live
 in those habitats is very common, and there are a couple ways to catch these fish. 
