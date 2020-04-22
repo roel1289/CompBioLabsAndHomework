@@ -20,14 +20,14 @@ gearFishLength <- FishLengthDiet[ ,c(2,4)] #now we can focus on the gear used an
 str(gearFishLength)
 
 #Now, I will remove any "NA"'s from the dataframe. 
-noNAGearFishLength <- drop_na(gearFishLength) #uses tidyr
+#noNAGearFishLength <- drop_na(gearFishLength) #uses tidyr
+noNNaDf <- gearFishLength[!apply(is.na(gearFishLength) | gearFishLength == "", 1, all),]
+
+noNAGearFishLength <- drop_na(noNNaDf) #uses tidyr
 
 #check to see if worked by searching for "NA"
 which(is.na(noNAGearFishLength)) #it worked, no "NA's" were found!
 head(noNAGearFishLength)
-
-#For some reason, there are 4 types of gear entries:  "HOOP"  , "SEINE" , "DIPNET", and ""
-#We must delete the "" entry from the GEAR column
 
 
 #barplot using "aggregate" and by making a table 
