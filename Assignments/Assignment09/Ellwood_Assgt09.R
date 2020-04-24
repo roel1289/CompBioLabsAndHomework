@@ -4,7 +4,7 @@
 install.packages("tidyverse") 
 require(dplyr)
 require(tidyr)
-
+require(ggplot2) #for the plot
 
 #importing the data
 FishLengthDiet <- read.csv("~/EBIO4420/CompBioLabsAndHomework/Assignments/Assignment08/FishLengthDiet.csv", stringsAsFactors = F)
@@ -17,11 +17,6 @@ FishLengthDiet <- read.csv("~/EBIO4420/CompBioLabsAndHomework/Assignments/Assign
 
 #looking into only columns "Gear" and "TL_MM"
 gearFishLength <- FishLengthDiet[ ,c(2,4)] #now we can focus on the gear used and the fish length
-
-DF <- cbind(gearFishLength$GEAR, gearFishLength$TL_MM)#makes matrix
-
-DF
-str(gearFishLength)
 
 #Now, I will remove any "NA"'s from the dataframe. 
 noNAGearFishLength <- drop_na(gearFishLength) #uses tidyr
@@ -47,8 +42,7 @@ barplot(bPlotTable)
 
 
 ###NOW graph using ggplot
-
-
+ggplot(noNAEmpDF, aes(x = noNAEmpDF$GEAR, y = noNAEmpDF$TL_MM)) + geom_boxplot()
 ################
 
 #filter into unique gear entries
