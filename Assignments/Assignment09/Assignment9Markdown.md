@@ -17,5 +17,8 @@ of season and hydrologica variability_ ](https://datadryad.org/stash/dataset/doi
 . The main goal of the original study is determine how factors such as the 
 influence of seasons and hydrological variability affect the foodweb of a river. 
 
+## Results and Conclusion
 
+#### Boxplot of the results
+![Fish Lengths for Each Method](https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot.png)
 
