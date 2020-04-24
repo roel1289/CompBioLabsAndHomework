@@ -11,12 +11,13 @@ and variability compare between the three fishing methods: a dipnet, hoop, and a
 
 ## Methods
 ### The data I will be looking at:
-The data set I will be looking into is one by Kathrine Behn and Colden Baxter. 
-It is called [ _The trophic ecology of a desert river fish assemblage: influence
+The data set I will be looking into is one by Kathrine Behn and Colden Baxter regarding the Little Colorado River in Arizona. 
+This dataset is called [ _The trophic ecology of a desert river fish assemblage: influence
 of season and hydrologica variability_ ](https://datadryad.org/stash/dataset/doi:10.5061/dryad.4q50bp6)
-. The main goal of the original study is determine how factors such as the 
-influence of seasons and hydrological variability affect the foodweb of a river. 
-
+. 
+### The Authors Original Intent
+The main intent of the original authors was to determine how factors such as the influence of seasons and
+hydrological variability influence the foodweb of a river. 
 ## Results and Conclusion
 
 #### Boxplot of the results
