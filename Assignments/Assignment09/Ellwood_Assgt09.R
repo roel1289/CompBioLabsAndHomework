@@ -15,32 +15,39 @@ FishLengthDiet <- read.csv("~/EBIO4420/CompBioLabsAndHomework/Assignments/Assign
 
 
 
-#looking into only columns "Gear", "SPECIES" and "TL_MM"
+#looking into only columns "Gear" and "TL_MM"
 gearFishLength <- FishLengthDiet[ ,c(2,4)] #now we can focus on the gear used and the fish length
+
+DF <- cbind(gearFishLength$GEAR, gearFishLength$TL_MM)#makes matrix
+
+DF
 str(gearFishLength)
 
 #Now, I will remove any "NA"'s from the dataframe. 
-#noNAGearFishLength <- drop_na(gearFishLength) #uses tidyr
-noNNaDf <- gearFishLength[!apply(is.na(gearFishLength) | gearFishLength == "", 1, all),]
+noNAGearFishLength <- drop_na(gearFishLength) #uses tidyr
+#noNNaDf <- gearFishLength[!apply(is.na(gearFishLength) | gearFishLength == "", 1, all),]
 
-noNAGearFishLength <- drop_na(noNNaDf) #uses tidyr
+
+#now to find and remove empty entries:
+noNAEmpDF <- noNAGearFishLength[-which(noNAGearFishLength == ""), ]
+
 
 #check to see if worked by searching for "NA"
-which(is.na(noNAGearFishLength)) #it worked, no "NA's" were found!
-head(noNAGearFishLength)
+which(is.na(noNAEmpDF)) #it worked, no "NA's" were found!
+head(noNAEmpDF)
 
 
-#barplot using "aggregate" and by making a table 
-#########################
-aggOutput <- aggregate(noNAGearFishLength$TL_MM, by = list(noNAGearFishLength$GEAR), FUN = sum)
-aggOutput
-barplot(height = aggOutput$x, names.arg = aggOutput$Group.1)
+#making a barplot
 #########################
 
 barplot(height = noNAGearFishLength$TL_MM, names = noNAGearFishLength$GEAR)
 
-bPlotTable <- table(noNAGearFishLength$TL_MM, noNAGearFishLength$GEAR)
+bPlotTable <- table(noNAEmpDF$TL_MM, noNAEmpDF$GEAR)
 barplot(bPlotTable)
+
+
+###NOW graph using ggplot
+
 
 ################
 
