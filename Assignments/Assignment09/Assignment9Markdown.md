@@ -1,6 +1,10 @@
 # How different fishing methods reflect the size of fish
 By Ross Ellwood
 ![The little Colorado River](https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/littleColoradoRiver.jpg)
+*This picture is of the Little Colorado River in Arizona.*
+
+## Introduction
+As more and more land humans are taking over habitat for many species, it is becoming more and more important to learn about these species. 
 
 ## Biological Question
 When researching rivers and other aquatic habitats, studying the fish that live
