@@ -20,8 +20,6 @@ gearFishLength <- FishLengthDiet[ ,c(2,4)] #now we can focus on the gear used an
 
 #Now, I will remove any "NA"'s from the dataframe. 
 noNAGearFishLength <- drop_na(gearFishLength) #uses tidyr
-#noNNaDf <- gearFishLength[!apply(is.na(gearFishLength) | gearFishLength == "", 1, all),]
-
 
 #now to find and remove empty entries:
 noNAEmpDF <- noNAGearFishLength[-which(noNAGearFishLength == ""), ]
@@ -32,17 +30,13 @@ which(is.na(noNAEmpDF)) #it worked, no "NA's" were found!
 head(noNAEmpDF)
 
 
-#making a barplot
+#making a barplot ggplot
 #########################
-
-barplot(height = noNAGearFishLength$TL_MM, names = noNAGearFishLength$GEAR)
-
-bPlotTable <- table(noNAEmpDF$TL_MM, noNAEmpDF$GEAR)
-barplot(bPlotTable)
-
-
-###NOW graph using ggplot
-ggplot(noNAEmpDF, aes(x = noNAEmpDF$GEAR, y = noNAEmpDF$TL_MM)) + geom_boxplot()
+ggplot(noNAEmpDF, aes(x = noNAEmpDF$GEAR, y = noNAEmpDF$TL_MM), color = "red") +
+  geom_boxplot() + 
+  ggtitle("The Lengths of Fish for each Method") +
+  xlab("Gear") +
+  ylab("Fish Length (cm)") 
 ################
 
 #filter into unique gear entries
