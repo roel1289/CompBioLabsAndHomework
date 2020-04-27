@@ -4,7 +4,11 @@ By Ross Ellwood
 *This picture is of the Little Colorado River in Arizona.*
 
 ## Introduction
-As more and more land humans are taking over habitat for many species, it is becoming more and more important to learn about these species. 
+With a changing climate, the habitat for more and more species is drastically changing. One of the areas that is hit the hardest
+are rivers and streams, and one of the main residents of these areas are fish. The research of various fish is very important to keep them 
+healthy. In order to research fish there are various methods. One method is to identify and count fish while they are in the water, while another
+method is to catch them and pull them out of the water. For my analysis, I will be looking into how the various research methods of catching fish compare. 
+This leads me into my research question. 
 
 ## Biological Question
 When researching rivers and other aquatic habitats, studying the fish that live
