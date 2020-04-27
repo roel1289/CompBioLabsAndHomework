@@ -42,16 +42,13 @@ ggplot(noNAEmpDF, aes(x = noNAEmpDF$GEAR, y = noNAEmpDF$TL_MM), color = "red") +
 #filter into unique gear entries
 #find average length for each gear option
 meanLengthByGear <- summarize(
-  group_by(noNAGearFishLength,
+  group_by(noNAEmpDF,
       GEAR),
   meanLength = mean(TL_MM))
 
-newMeanLengthByGear <- meanLengthByGear[-c(1),]
+meanLengthByGear
 
-str(newMeanLengthByGear)
 #so far, I have found the avg. length of each fish species using each type of gear method
 
+ggplot(meanLengthByGear, aes(x = meanLengthByGear$GEAR, y = meanLengthByGear$meanLength)) + geom_boxplot()
 
-barplotinput <- table(newMeanLengthByGear$meanLength, newMeanLengthByGear$GEAR)
-barplot(barplotinput)
-View(barplotInput)
