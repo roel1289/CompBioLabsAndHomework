@@ -33,7 +33,7 @@ head(noNAEmpDF)
 #making a barplot ggplot
 #########################
 ggplot(noNAEmpDF, aes(x = noNAEmpDF$GEAR, y = noNAEmpDF$TL_MM), color = "red") +
-  geom_boxplot() + 
+  geom_boxplot(aes(fill = GEAR)) + 
   ggtitle("The Lengths of Fish for each Method") +
   xlab("Gear") +
   ylab("Fish Length (cm)") 
