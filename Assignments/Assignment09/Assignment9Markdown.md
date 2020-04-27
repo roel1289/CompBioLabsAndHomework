@@ -25,7 +25,16 @@ of season and hydrologica variability_ ](https://datadryad.org/stash/dataset/doi
 . 
 ### The Authors Original Intent
 The main intent of the original authors was to determine how factors such as the influence of seasons and
-hydrological variability influence the foodweb of a river. 
+hydrological variability influence the foodweb of a river. In order to produce this data, the authors focused on four native
+species of fish: _blue head sucker, flannelmouth sucker, speckled dace_, and the _endangered humpback chub_. The authors looked
+into the diets of these fish across different seasons to see how the diets varied throughout change. 
+### The Data
+After taking many samples and measurements, the authors combined their information into a series of five datasets. For my project,
+I only looked at one of the datasets; it has 10 columns: date, gear, species, total length of fish, fork length of fish, 
+estimate weight (grams) of fish, weight source, whether or not the fish was sampled for diet, fish ID, and any notes. Within the whole 
+dataset, there are 2736 rows or observations. 
+### What the authors did with the dataa
+
 ## Results and Conclusion
 
 #### Boxplot of the results
