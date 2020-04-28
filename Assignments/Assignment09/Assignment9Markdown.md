@@ -18,24 +18,36 @@ For my data analysis, I am asking the ***question*** how do the average length o
 and variability compare between the three fishing methods: a dipnet, hoop, and a seine?
 
 ## Methods
-### The data I will be looking at:
+### The Data's Origins
 The data set I will be looking into is one by Kathrine Behn and Colden Baxter regarding the Little Colorado River in Arizona. 
 This dataset is called [ _The trophic ecology of a desert river fish assemblage: influence
 of season and hydrologica variability_ ](https://datadryad.org/stash/dataset/doi:10.5061/dryad.4q50bp6)
 . 
-### The Authors Original Intent
-The main intent of the original authors was to determine how factors such as the influence of seasons and
-hydrological variability influence the foodweb of a river. In order to produce this data, the authors focused on four native
-species of fish: _blue head sucker, flannelmouth sucker, speckled dace_, and the _endangered humpback chub_. The authors looked
-into the diets of these fish across different seasons to see how the diets varied throughout change. 
-### The Data
+### The Data Structure
 After taking many samples and measurements, the authors combined their information into a series of five datasets. For my project,
 I only looked at one of the datasets; it has 10 columns: date, gear, species, total length of fish, fork length of fish, 
 estimate weight (grams) of fish, weight source, whether or not the fish was sampled for diet, fish ID, and any notes. Within the whole 
 dataset, there are 2736 rows or observations. 
-### What the authors did with the dataa
+
+### What the Authors Did With the Data
+The main intent of the original authors was to determine how factors such as the influence of seasons and
+hydrological variability influence the foodweb of a river. In order to produce this data, the authors focused on four native
+species of fish: _blue head sucker, flannelmouth sucker, speckled dace_, and the _endangered humpback chub_. The authors looked
+into the diets of these fish across different seasons to see how the diets varied throughout change. 
+
+### What I did with the Data
+There are countless research projects that involve surverying for fish, but there there is a 
+clear gap in research that involves comparing fresh water fish survery techniques as I am doing in my project.
+In order to pursue my question, I isolated the second dataset from the original authors. Next, I isolated
+the two columns containing type of survery gear and the length of fish caught from tip to tail. 
+After a bit more of parsing through data, I was able create a clear boxplot illustrating 
+the average fish length for each method and how much variation. By knowing which techniques may 
+bring different sized fish, scientists can have more knowledgable, guided research. For example, if 
+in a project one wanted to catch a notoriously small fish, they could use the technique that generally 
+elicited smaller fish. 
 
 ## Results and Conclusion
 
 #### Boxplot of the results
-![Fish Lengths for Each Method](https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot2.png){:height = "200px" width= ""250px"}
+![Fish Lengths for Each Method](https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot2.png)
+I was able to find a clear difference between the averages of the different gear.
