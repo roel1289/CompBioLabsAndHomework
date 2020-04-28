@@ -38,5 +38,4 @@ dataset, there are 2736 rows or observations.
 ## Results and Conclusion
 
 #### Boxplot of the results
-![Fish Lengths for Each Method](https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot2.png = 300x)
-
+![Fish Lengths for Each Method](https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot2.png){:height = "200px" width= ""250px"}
