@@ -39,6 +39,18 @@ ggplot(noNAEmpDF, aes(x = noNAEmpDF$GEAR, y = noNAEmpDF$TL_MM), color = "red") +
   ylab("Fish Length (cm)") 
 ################
 
+
+
+#filter into unique gear entries
+#find average length for each gear option
+meanLengthByGear <- summarize(
+  group_by(noNAEmpDF,
+           GEAR),
+  meanLength = mean(TL_MM))
+
+meanLengthByGear
+
+
 ### Now I will run an ANOVA test to see if my results were significant
 #I will be running a one-way ANOVA test
 
@@ -47,17 +59,3 @@ summary(fishAOV)
 
 #After running an ANOVA, I found a p-value to be p = 2e-16 meaning there are
 #significant differences between the averages of the three types of gear!
-
-
-
-#filter into unique gear entries
-#find average length for each gear option
-meanLengthByGear <- summarize(
-  group_by(noNAEmpDF,
-      GEAR),
-  meanLength = mean(TL_MM))
-
-meanLengthByGear
-
-#so far, I have found the avg. length of each fish species using each type of gear method
-
