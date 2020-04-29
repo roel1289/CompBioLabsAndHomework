@@ -49,8 +49,8 @@ elicited smaller fish.
 ## Results and Conclusion
 
 #### Boxplot of the results
-![Fish Lengths for Each Method](https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot2.png)
-<img src="https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot2.png" alt="https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot2" width="200"/>
+
+<img src="https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot2.png" alt="https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot2" width="1000"/>
 I was able to find a clear difference between the averages of the different gear. After running a one-way ANOVA test, I was 
 able to produce a p-value of p = 2 x 10^-16 , so the fish length averages for each method are significantly different. So, 
 it is unlikely the difference in fish length for each method is due to pure chance. Furthermore, 
