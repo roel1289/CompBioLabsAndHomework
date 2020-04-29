@@ -54,3 +54,8 @@ elicited smaller fish.
 I was able to find a clear difference between the averages of the different gear. After running a one-way ANOVA test, I was 
 able to produce a p-value of p = 2 x 10^-16 , so the fish length averages for each method are significantly different. So, 
 it is unlikely the difference in fish length for each method is due to pure chance. Furthermore, 
+
+
+## References Cited
+Behn, Kathrine E.; Baxter, Colden V. (2019), The trophic ecology of a desert river fish assemblage: 
+influence of season and hydrologic variability, Ecosphere, Article-journal, https://doi.org/10.1002/ecs2.2583
