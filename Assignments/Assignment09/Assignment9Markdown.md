@@ -51,9 +51,16 @@ elicited smaller fish.
 #### Boxplot of the results
 
 <img src="https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot3.png" alt="https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot3" width="600"/>
+
 I was able to find a clear difference between the averages of the different gear. After running a one-way ANOVA test, I was 
 able to produce a p-value of p = 2 x 10^-16 , so the fish length averages for each method are significantly different. So, 
-it is unlikely the difference in fish length for each method is due to pure chance. Furthermore, 
+it is unlikely the difference in fish length for each method is due to pure chance.\ 
+After running some code in RStudio, I was able to determine that the mean fish length for the dipnet,
+hoop, and seine, respectively are 48.4 cm, 115.0 cm, and 57.4 cm. It is clear to see that the hoop most
+frequently brings in the largest fish while the dipnet and seine seem to catch smaller fish. In addition, 
+this figure illustrates the variability among the different techniques. Because the hoop has the longer 
+whiskers and a large array of outliers, we can conclude it has the most variation in fish length.  
+
 
 
 ## References Cited
