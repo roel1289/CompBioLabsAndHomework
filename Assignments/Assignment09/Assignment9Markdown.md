@@ -15,16 +15,16 @@ This leads me into my research question.
 When researching rivers and other aquatic habitats, studying the fish that live
 in those habitats is very common, and there are a couple ways to catch these fish. 
 Some of the main methods to catch fish for research are a dipnet, hoop, and a seine.
-For my data analysis, I am asking the ***question*** how do the average length of fish 
-and fish length variability compare between the three fishing methods: a dipnet, hoop, and a seine?
+For my data analysis, I asked the ***question*** of how do the average length of fish 
+and fish length variability compare between the three fishing methods: a dipnet, hoop, and a seine.
 
 ## Methods
-### The Data's Origins
-The data set I will be looking into is one by Kathrine Behn and Colden Baxter regarding the Little Colorado River in Arizona. 
+### The Data's Origin
+The data set I have looked into is one by Kathrine Behn and Colden Baxter regarding the Little Colorado River in Arizona. 
 This dataset is called [ _The trophic ecology of a desert river fish assemblage: influence
-of season and hydrologica variability_ ](https://datadryad.org/stash/dataset/doi:10.5061/dryad.4q50bp6)
-. The authors are curious about the plasticity of the food web in undammed rivers in the arid southwest United States. They also
-are looking into how factors such as humans or seasons influece the foodweb.
+of season and hydrologic variability_ ](https://datadryad.org/stash/dataset/doi:10.5061/dryad.4q50bp6).
+The authors evaluated the plasticity of the food web in undammed rivers in the arid southwest United States. They also
+looked into how factors such as humans or seasons influenced the foodweb.
 
 ### What the Authors Did With the Data
 The main intent of the original authors was to determine how factors such as the influence of seasons and
@@ -40,13 +40,13 @@ dataset, there are 2736 rows or observations.
 
 
 ### What I did with the Data
-There are countless research projects that involve surverying for fish, but there there is a 
-clear gap in research that involves comparing fresh water fish survery techniques as I am doing in my project.
+There are countless research projects that involve surveying for fish, but there there is a 
+clear gap in research that involves comparing freshwater fish survey techniques as I am doing in my project.
 In order to pursue my question, I isolated the second dataset from the original authors. Next, I isolated
-the two columns containing type of survery gear and the length of fish caught from tip to tail. 
+the two columns containing type of survey gear and the length of fish caught from tip to tail. 
 After a bit more of parsing through data, I was able create a clear boxplot illustrating 
 the average fish length for each method and how much variation. By knowing which techniques may 
-bring different sized fish, scientists can have more knowledgable, guided research. For example, if 
+bring different sized fish, scientists can have more knowledgeable, guided research. For example, if 
 in a project one wanted to catch a notoriously small fish, they could use the technique that generally 
 elicited smaller fish. 
 
@@ -57,7 +57,7 @@ elicited smaller fish.
 <img src="https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot3.png" alt="https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot3" width="600"/>
 
 I was able to find a clear difference between the averages of the different gear. After running a one-way ANOVA test, I was 
-able to produce a p-value of p = 2 x 10^-16 , so the fish length averages for each method are significantly different. So, 
+able to produce a p-value of p = 2e-16 , so the fish length averages for each method are significantly different. So, 
 it is unlikely the difference in fish length for each method is due to pure chance.\
 After running some code in RStudio, I was able to determine that the mean fish length for the dipnet,
 hoop, and seine, respectively are 48.4 cm, 115.0 cm, and 57.4 cm. It is clear to see that the hoop most
