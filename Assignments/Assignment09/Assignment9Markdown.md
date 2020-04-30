@@ -25,7 +25,7 @@ and fish length variability compare between the three fishing methods: a dipnet,
 The data set I have looked into is one by Kathrine Behn and Colden Baxter regarding the Little Colorado River in Arizona. 
 This dataset is called [ _The trophic ecology of a desert river fish assemblage: influence
 of season and hydrologic variability_ ](https://datadryad.org/stash/dataset/doi:10.5061/dryad.4q50bp6) and takes place
-from 2012 to 2014.
+during the spring and summer seasons from 2012 to 2014.
 The authors evaluated the plasticity of the food web in undammed rivers in the arid southwest United States. They also
 looked into how factors such as humans or seasons influenced the foodweb.
 
@@ -62,10 +62,11 @@ elicited smaller fish.
 #### Boxplot of the results
 
 <img src="https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot3.png" alt="https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot3" width="600"/>
+*Boxplot generated using RStudio.*
 
 I was able to find a clear difference between the averages of the different gear. After running a one-way ANOVA test, I was 
 able to produce a p-value of p = 2e-16 showing it was statistically significant. In other words, 
-the fish length averages for each method are significantly different. So, 
+the fish length averages for each method are significantly different, and 
 it is unlikely the difference in fish length for each method is due to pure chance.\
 Additionally, from RStudio, I was able to determine that the mean fish length for the dipnet,
 hoop, and seine, respectively are 48.4 cm, 115.0 cm, and 57.4 cm. It is clear to see that the hoop most
@@ -74,7 +75,7 @@ this figure illustrates the variability among the different techniques. Because 
 whiskers and a large array of outliers, we can conclude it has the most variation in fish length.\
 My original prediction that the seine would bring forward the largest fish was proven to be false.
 One reason why the hoop yielded the biggest fish on average is that it is possible to lay the hoop deep in the water
-where the bigger fish may be. Because the hoop can rest in the water for a longer period of time than the other methods, it is possible 
+where the bigger fish may be. Because the hoop can rest in the water untouched for a period of time, it is possible 
 fish can become comfortable with it around and are more likely to get trapped in it. Whereas the dipnet and seine are being constantly
 held by people, so little human movements may spook the fish, preventing the fish from getting trapped.\
 With this information at hand, researchers can now make a more educated decision on which methods to use. 
