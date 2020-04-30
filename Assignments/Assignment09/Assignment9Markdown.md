@@ -62,8 +62,11 @@ elicited smaller fish.
 #### Boxplot of the results
 
 <img src="https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot3.png" alt="https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot3" width="600"/>
+
 *Boxplot generated using RStudio.*
+
 ### Conclusion
+
 I was able to find a clear difference between the averages of the different gear. After running a one-way ANOVA test, I was 
 able to produce a p-value of p = 2e-16 showing it was statistically significant. In other words, 
 the fish length averages for each method are significantly different, and 
