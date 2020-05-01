@@ -63,7 +63,10 @@ elicited smaller fish.
 
 <img src="https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot3.png" alt="https://github.com/roel1289/CompBioLabsAndHomework/blob/master/Assignments/Assignment09/Rplot3" width="600"/>
 
-*Boxplot generated using RStudio.*
+This is a boxplot generated using RStudio. On the x-axis I have the types of gear: dipnet, hoop, and seine. On the y-axis,
+I have the fish length (cm). I have created a boxplot to clearly show each of the method's averages as well 
+as each method's variation. Out of the three methods, the hoop appears to have the largest mean in fish length 
+and the highest variability. 
 
 ### Conclusion
 
